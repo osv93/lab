@@ -1,0 +1,39 @@
+table {
+    /*border-collapse: collapse;
+    border-radius: 5px;
+    border-spacing: 0;
+        table-layout: fixed;
+    */
+text-align: left;
+  width: 300px;
+
+  border-spacing: 0;
+}
+
+table th {
+    background-color: #6699ff;
+    border-bottom: solid 0.5px #8f97ab;
+    color: white;
+}
+
+table td {
+    background-color: #ccddff;
+     border-bottom: solid 0.5px #8f97ab;
+}
+
+.Thcentro {
+  border-left: solid 0.5px #8f97ab;
+  border-right: solid 0.5px #8f97ab;
+}
+
+.primerFil {
+      border-top: solid 0.5px #2a2a2b;
+}
+
+.radioLeft {
+      border-radius: 5px 0px 0px 0px; 
+}
+
+.radioRigh {
+  border-radius: 0px 5px 0px 0px; 
+}

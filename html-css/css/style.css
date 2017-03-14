@@ -1,0 +1,252 @@
+@import url("./styleTable.css");
+
+
+/*
+* Normal Flow.html
+*/
+.container {
+  position: static;
+  border-style: solid;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/*
+* Relative Positioning.html
+*/
+.container2{
+  border-style: solid;
+    margin-left: 30%;
+  margin-right: 30%;
+}
+
+.p2 {
+  position: relative;
+  left: 30px;
+  margin-right: 10%;
+}
+
+/*
+* Absolute Positioning.html
+*/
+.titulo1{
+  position: absolute;
+  background-color: red;
+  left: 50%;
+}
+
+/*
+* Fixed Positioning.html
+*/
+
+.fix{
+    position: fixed;
+  top:10px;
+  background-color: yellow;
+  left: 30%;
+}
+
+/*
+* float.html
+*/
+.flo{
+  border: solid;
+  float: right;
+  margin-right: 60px;
+}
+
+
+/*
+* three col.html
+*/
+.left_column, .right_column, .center_column{
+  width:30%;
+  float:left;
+  margin:10px;
+}
+
+/*
+* two col.html
+*/
+.colum1{
+  float:left;
+  width:63%;
+}
+
+.colum2{
+  float:left;
+  width:32%;
+  margin:10px;
+}
+
+.colum3{
+  width:63%;
+}
+
+
+/*
+* fixed-width-layout.html
+*/
+.content{
+  overflow: auto;
+  height: 100%;
+}
+
+.nav, .feature, .footer {
+  background-color: #efefef;
+  padding: 10px;
+  margin: 10px;
+}
+
+.nav a{
+  color: black;
+}
+.nav li{
+  display: inline;
+  padding: 5px;
+}
+
+.c1, .c2, .c3{
+background-color: #efefef;
+width: 300px;
+float: left;
+margin: 10px
+}
+
+.cuerpo{
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*
+* liquid-width-layout
+*/
+.nav2 a {
+  color: black;
+}
+
+.cuerpo2 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content2 {
+  overflow: auto;
+}
+
+.nav2, .feature2, .footer2 {
+  margin: 1%;
+}
+
+.c12, .c22, .c32 {
+background-color: #efefef;
+width: 31.3%;
+float: left;
+margin: 1%;
+}
+
+.c32 {
+  margin-right: 0%;
+}
+
+.nav2 li {
+  display: inline;
+  padding: 0.5em;
+}
+
+.nav2, .footer2 {
+  background-color: #efefef;
+  padding: 0.5em 0;
+}
+
+.feature2, .c12, .c22, .c32 {
+  height: 10em;
+  margin-bottom: 1em;
+  background-color: #efefef;
+}
+
+/*
+* grid-layout.html
+*/
+
+.imagen{
+       background-image: url(../img/12_col.gif);
+       width: 960px;
+}
+
+.contenedor {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid;
+  border-width: 1px;
+  border-color: #8a8a5c;
+  width: 960px;
+}
+
+.cuerpo3 {
+  width: 71.2%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.content3 {
+  overflow: auto;
+}
+
+
+.nav3{
+  width: 940px;
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
+
+.nav31{
+  width: 940px;
+}
+
+.feature3{
+  width: 940px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.c13, .c23, .c33 {
+  width: 300px;
+  float: left;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer3 {
+    width: 940px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.nav3, .feature3,.nav31, .c13, .c23, .c33, .footer3 {
+  background-color: #cc0066;
+  color: white;
+  margin: 9.7px;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/*
+* multiple-style-sheets-import.html
+*/
+
+.multiple h1 {
+  margin-bottom: 0px;
+}
+
+.multiple hr, h4 {
+  margin-top: 0px;
+}
+
+
+.h4tbl {
+  color: #3760c5;
+}
