@@ -54,33 +54,51 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#btn_azul").click(function() {
-		$("#mostrarResultado").css('background', 'blue');
+        var estilo = $("#mostrarResultado").css('background', 'blue');
+        var result = $("#thing1").text();
+        limpiarTextArea();
+        mostrarResultados(result,estilo);
 	});
 });
 $(document).ready(function(){
 	$("#btn_rojo").click(function() {
-		$("#mostrarResultado").css('background', 'red');
+        var estilo = $("#mostrarResultado").css('background', 'red');
+        var result = $(".special").text()
+        limpiarTextArea();
+        mostrarResultados(result,estilo);
 	});
 });
 
 $(document).ready(function(){
-	$("#btn_verde").click(function() {
-		$("#mostrarResultado").css('background', 'green');
+	$("#btn_verde").click(function() {         
+        var estilo = $("#mostrarResultado").css('background', 'green');
+        var result = $('span').text();
+        limpiarTextArea();
+        mostrarResultados(result,estilo);
 	});
 });
 
 $(document).ready(function(){
 	$("#btn_amarillo").click(function() {
 		$("#mostrarResultado").css('background', 'yellow');
+                var result = $("#thing1").text();
+                $(".special").text(result);
 	});
 });
 
 $(document).ready(function(){
-	$("#btn_rosado").click(function() {
-		
+	$("#btn_rosado").click(function() {		
+        var estilo = $("#mostrarResultado").css('background', '#FF00FF');
+        var result = $('#languages > li').text();
+        limpiarTextArea();
+        mostrarResultados(result,estilo);        
 	});
 });
 
 var mostrarResultados = function(texto, estilo) {
 	$("#mostrarResultado").text(texto);
+}
+
+var limpiarTextArea = function(){
+    $("#mostrarResultado").text("");
 }

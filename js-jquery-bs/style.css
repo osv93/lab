@@ -1,0 +1,170 @@
+         .SubSectionCenter h2, .SubSectionRight h2 {
+    color: rgba(0, 124, 255, 0.81);    
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .SubSubSection h3 {
+    color: green;
+    font-size: 20px;
+  }
+
+  .SubSubSubSection h4 {
+    color: red;
+    font-size: 20px;
+  }
+
+        p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  b {
+    font-weight: bold;
+  }
+    .lineaFooter {
+    margin: 15px;
+    border-top: solid 1px black;
+  }
+
+      footer {
+    height: 10%;
+    text-align: center;
+  }
+
+  footer li {
+    display: inline-block;  
+    color: blue;
+  }
+
+  .wrapper {
+    height: 85%;
+    overflow-y: scroll;
+    padding: 15px;
+  }
+
+  .sinDecoracion{
+    text-decoration: none;
+  }
+
+  span {
+    color: #f81d1d;
+  }
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .menuHome > a:visited {
+    background: #c4c4c4;
+    color: black;
+  }
+
+  .menuHome > a {
+    text-decoration: none;
+  }
+
+  .navbar-nav>li>a {
+    text-align: center;
+    background: #e4e4e4;
+    margin: 3px;
+    padding: 5px;
+  }
+
+  .navbar-nav {
+    margin: 15px;
+  }
+
+  .modified-titulo h3  {
+    font-size: 22px;
+    margin:15px;
+  }
+  .nav>li>a {
+    display: block; 
+  }
+
+  .containerImg {
+    margin: 15px;
+  }
+
+  .container-fluid {
+     padding-right: 0px;
+     padding-left: 0px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.row {
+  padding: 15px;
+}
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body
+  {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+@media (min-width: 768px){
+
+  .menuAbout{
+    border-right:solid 1px;
+    border-left:solid 1px;
+  }
+
+  .menuCourses{
+    border-right:solid 1px;
+  }
+  .navbar-nav>li>a {
+   padding-top: 0px;
+   padding-bottom: 0px; 
+   background: #ffffff;
+       margin: 0px;
+ }
+
+ .menuHome > a:visited {
+   background: #ffffff;
+   color: black;
+ }
+
+  .modified-titulo h3  {
+    font-size: 22px;
+    margin:0px;
+  }
+
+}
+
+
+@media print {
+.wrapper{
+
+}
+
+.Footer {
+  display: none;
+}
+
+         .SubSectionCenter h2, .SubSectionRight h2 {
+    color: rgba(0, 124, 255, 0.81);    
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .SubSubSection h3 {
+    color: green;
+    font-size: 20px;
+  }
+
+  .SubSubSubSection h4 {
+    color: red;
+    font-size: 20px;
+  }
+}

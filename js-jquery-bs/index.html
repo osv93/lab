@@ -1,100 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
 
-<head lang="en">
-    <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <title>Laboratorio JS y JQuery</title>
+	<!--Declaracion de hojas de estilo-->
+	<!--<link rel="stylesheet" type="text/css" href="./styles/style_ie.css" media="screen">-->
+	<!--<link rel="stylesheet" type="text/css" href="./styles/desktop_first.css" media="screen">-->
+	<!--<link rel="stylesheet" type="text/css" href="./styles/mobile_first.css" media="screen">-->
+	<!--<link rel="stylesheet" type="text/css" href="./styles/print.css" media="print">-->
+	<!--<link rel="stylesheet" type="text/css" href="./styles/reset.css" media="screen">-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./print.css" media="print">
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Examen parcial1-UNA</title>
 </head>
-
 <body>
+	<!--Contenedor principal que define un tamaño para hacer el scroll-->
+	<div class="wrapper">	
+		<header>
+            <div class="container-fluid">
+                <div class="navbar-header modified-titulo" >
+                  <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
+                  <h3 class="navbar-brand">UNA WEB [ Luis Osvaldo Aguero Perez - 115360385]</h3>
+              </div>
+              <ul class="nav navbar-nav navbar-right hidden-print">
+               <li class="menuHome"><a href="#">HOME</a></li>
+               <li class="menuAbout"><a href="#">ABOUT</a></li>
+               <li class="menuCourses"><a href="#">COURSES</a></li>
+               <li><a href="#">CONTACT</a></li>
+           </ul>
+       </div>
+   </header>
+   <div class="containerImg"><img class="img-responsive hidden-print" src="./images/imagen.png" alt="img1"></div>
 
-    <h1>Laboratorio JS y JQuery</h1>
-    <ul>
-        <li id="thing1">thing 1</li>
-        <li>thing 2</li>
-        <li>thing 3</li>
-        <li class="special">thing 4</li>
-        <li>thing 5</li>
-        <li class="special">thing 6</li>
-    </ul>
+   <!--Contenedor de las secciones de la página-->
+   <div class="row">
+      <div class="col-md-5">
+          <article>
+            <section class="sectionMain">
+               <h2>Main Section</h2>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.   
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.               
+              </p>
+              <p>
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+              </p>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.                     
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+              </p> 
+          </section>
+      </article>
+  </div>
+  <div class="col-md-3">
+    <section class="SubSectionCenter">
+        <h2>Sub-section Center</h2>
+        <p id="textoCuadro">
+           A <b>paragrap</b> of <span>text</span> with an <a href="#">unassigned link</a>.
+           <br>
+           A <i>second row</i> of <s>text</s> with a <a class="sinDecoracion" href="#">web link</a>
+       </p>
+
+       <!--Imagen-->
+       <img class="img-responsive hidden-print" src="./images/imagen2.png" alt="img2">
+       <p>
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+       </p>
+       <p>
+           Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+       </p>
+   </section>
+</div>
+<div class="col-md-3">
+    <section class="SubSectionRight">
+
+        <h2>Sub-Section Right</h2>
+        <p>
+           We open at <span>10:00</span> every morning.
+       </p>
+       <p>
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+       </p>   
+       <section class="SubSubSection">
+           <h3>Sub-Sub-section</h3>
+           <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+          </p>
+
+          <img class="img-responsive hidden-print" src="./images/imagen2.png" alt="img3">
+          <section class="SubSubSubSection">
+              <h4>Sub-Sub-Sub-section</h4>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+             </p>
+         </section>
+     </section>
+ </section>
+</div>
 
 
-    <ul id="languages">
-        <li>Mandarin</li>
-        <li>English
-            <ul class="greetings">
-                <li class="main-greeting">Hi</li>
-                <li>Hello</li>
-                <li>Slang
-                    <ul data-troy>
-                        <li>What's up doc?</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>Hindustani</li>
-        <li data-troy="true">Spanish</li>
-        <li>Russian</li>
-        <li>Arabic</li>
-        <li>Bengali</li>
-        <li>Portuguese</li>
-        <li>Malay-Indonesian</li>
-        <li>French</li>
-    </ul>
-    <ul>
-        <li data-employee="Bob Metz">Bob Metz</li>
-        <li data-employee="Billy Bob Jones">Billy Jones</li>
-        <li data-employee="Laura Jones-Bob">Laura Jones-Bob</li>
-    </ul>
 
-    <a href="example.html" lang="en">American English</a>
-    <a href="example.html" lang="en-UK">English English</a>
-    <a href="example.html" lang="es">Spanish</a>
-    <a href="example.html" lang="fr">French</a>
-    <a href="example.html" lang="de">German</a>
-    <a href="example.html" lang="ch">Chinese</a>
-    <a href="example.html" lang="ko">Korean</a>
-    <a href="example.html" lang="en-and-es">Spanglish</a>
-
-
-    <div>
-        <p>I am the first child of div #1.</p>
-
-        <p>I am the second child of div #1.</p>
-
-        <p>I am the third child of div #1.</p>
-
-        <p>I am the fourth child of div #1.</p>
-
-        <p>I am the fifth child of div #1.</p>
-    </div>
-    <div>
-        <p>I am the first child of div #2.</p>
-
-        <p>I am the second child of div #2.</p>
-
-        <p>I am the third child of div #2.</p>
-    </div>
-    <div>
-        <p>I am the only child of div #3.</p>
-        <span>Here is some text</span>
-    </div>
-    <div>
-        <form title="Calcular Fecha de Nacimiento">
-            <input type="text" id="name" name="name" value="">
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="">
-            <button type="button" id="btn_calcular_edad">Calcular Edad</button>
-            <br/>
-            <textarea rows="4" cols="50" disabled id="mostrarResultado">Resultado</textarea>
-        </form>
-    </div>
-    <button type="button" id="btn_azul">Color Azul</button>
-    <button type="button" id="btn_rojo">Color Rojo</button>
-    <button type="button" id="btn_verde">Color Verde</button>
-    <button type="button" id="btn_amarillo">Color Amarillo</button>
-    <button type="button" id="btn_rosado">Color Rosado</button>
+</div>
+</div>
+<!--El pie de página-->
+<footer>
+  <div class="lineaFooter"></div>
+  <div class="Footer">
+     <nav>
+      <ul class="">
+         <li class="menuHome"><a href="#">HOME</a></li>
+         <li class="menuAbout"><a href="#">ABOUT</a></li>
+         <li class="menuCourses"><a href="#">COURSES</a></li>
+         <li><a href="#">CONTACT</a></li>
+     </ul>
+ </nav>
+</div>
+Copyright &copy; 2017. Curso de Programacion Web
+</footer>
 </body>
-
 </html>

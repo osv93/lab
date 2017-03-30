@@ -1,0 +1,68 @@
+@media print{
+.menu {
+	display: none;
+}
+
+.containerImg {
+	display: none;
+}
+
+img {
+	display: none;
+}
+
+img.imgCenter{
+	display: none;
+}
+
+.Footer {
+	display: none;
+}
+
+.lineaFooter {
+	margin: 15px;
+	border-top: solid 1px black;
+}
+
+#textoCuadro {
+	border: none;
+	background: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+span {
+	color: red;
+}
+
+.SubSectionCenter h2, .SubSectionRight h2 {
+    color: rgba(0, 124, 255, 0.81);   
+	font-size: 25px;
+}
+
+.SubSectionCenter h2::after  {
+	content: "Sub-section";
+	text-indent: 0;
+	display: block;
+	line-height: initial;
+}
+
+.SubSectionCenter h2 {
+	text-indent: -9999px;
+	line-height: 0;
+}
+
+.SubSubSection h3 {
+	color: green;
+	font-size: 20px;
+}
+
+.SubSubSubSection h4 {
+	color: red;
+	font-size: 20px;
+}
+
+footer {
+	text-align: center;
+}
+}
