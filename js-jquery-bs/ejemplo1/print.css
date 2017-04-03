@@ -32,11 +32,11 @@ img.imgCenter{
 }
 
 span {
-	color: red;
+	color: red !important;
 }
 
 .SubSectionCenter h2, .SubSectionRight h2 {
-    color: rgba(0, 124, 255, 0.81);   
+    color: rgba(0, 124, 255, 0.81) !important;   
 	font-size: 25px;
 }
 
@@ -53,12 +53,12 @@ span {
 }
 
 .SubSubSection h3 {
-	color: green;
+	color: green !important;
 	font-size: 20px;
 }
 
 .SubSubSubSection h4 {
-	color: red;
+	color: red !important;
 	font-size: 20px;
 }
 
