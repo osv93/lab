@@ -140,31 +140,11 @@
     margin:0px;
   }
 
-}
-
-
-@media print {
-.wrapper{
-
-}
-
-.Footer {
-  display: none;
-}
-
-         .SubSectionCenter h2, .SubSectionRight h2 {
-    color: rgba(0, 124, 255, 0.81);    
-    font-size: 22px;
-    font-weight: bold;
+    #textoCuadro {
+    border: solid 2px black;
+    background: orange;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-  .SubSubSection h3 {
-    color: green;
-    font-size: 20px;
-  }
-
-  .SubSubSubSection h4 {
-    color: red;
-    font-size: 20px;
-  }
 }
