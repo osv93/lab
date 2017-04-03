@@ -37,20 +37,13 @@
 
 $(document).ready(function(){
 	$("#btn_calcular_edad").click(function() {
-
 	var nombre = $("#name").val();
 	var fecha_nacimiento = $("#fecha_nacimiento").val();
 
     var user = new usuario(nombre, new Date(fecha_nacimiento));
+    user._presentarse();
 	});
 });
-
-/*$(document).ready(function(){
-	$("#btn_azul").on('click','li',function (){
-	    $("#mostrarResultado").text($(this).text());
-	    $("#mostrarResultado").css('background', 'blue');
-	});
-});*/
 
 $(document).ready(function(){
 	$("#btn_azul").click(function() {
